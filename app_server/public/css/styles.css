@@ -110,3 +110,10 @@ body {
     font-size: 16px;
     padding: 5px;
 }
+
+.Label {
+    color: #3B4856;
+    font-size: 16px;
+    padding: 5px;
+    text-align: left;
+}

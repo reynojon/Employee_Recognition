@@ -1,17 +1,40 @@
 extend layout
 
 block content
+    // Navbar
     .container-fluid.p-0.m-0
-            nav.navbar.mynavbar.sticky-top.px-2
-                .container
-                    .d-none.d-md-block.py-2
-                        .d-flex.flex-row
-                            img.small_logo(src="/img/Logo.png")
-                            a.comp_name(href='/') Recognize
-                    .d-sm-flex.flex-sm-row.d-block.col.py-2.text-sm-left.text-center.pr-0
-                        .col.d-sm-flex.flex-sm-row.d-block.w-100.justify-content-start
-                            a.d-sm-flex.flex-sm-row.d-block.active-link(href='mailto:lynx.no.reploy@gmail.com') Contact Us
-                            a.d-sm-flex.flex-sm-row.d-block.active-link(href='/faq') FAQ
-                        .col.w-100
-                        .col.d-sm-flex.flex-sm-row.d-block.w-100.text-sm-left.text-center.justify-content-end.pr-0
-                            a.d-sm-flex.flex-sm-row.d-block.active-link(href='/logout') Sign Out
+        nav.navbar.mynavbar.sticky-top.px-2
+            .container
+                .d-none.d-md-block.py-2
+                    .d-flex.flex-row
+                        img.small_logo(src="/img/Logo.png")
+                        a.comp_name(href='/') Recognize
+                .d-sm-flex.flex-sm-row.d-block.col.py-2.text-sm-left.text-center.pr-0
+                    .col.d-sm-flex.flex-sm-row.d-block.w-100.justify-content-start
+                        a.d-sm-flex.flex-sm-row.d-block.active-link(href='mailto:lynx.no.reploy@gmail.com') Contact Us
+                        a.d-sm-flex.flex-sm-row.d-block.active-link(href='/faq') FAQ
+                    .col.w-100
+                    .col.d-sm-flex.flex-sm-row.d-block.w-100.text-sm-left.text-center.justify-content-end.pr-0
+                        a.d-sm-flex.flex-sm-row.d-block.active-link(href='/logout') Sign Out
+        // Main Container
+        .container-fluid
+            .container.d-block.w-100.text-center.mycontainer
+                h1.myheader.d-inline Business Information Reports
+            .container.mycontainer
+                form.m-auto
+                    .container.pt-5.pb-5
+                        .row.d-flex.justify-content-around
+                            .col.d-flex.justify-content-around
+                                label.Label.my-auto(for='startdate') Start Date:
+                                input#startdate.my-auto(type=date)
+                            .col.d-flex.justify-content-around
+                                label.Label.my-auto(for='enddate') End Date:
+                                input#enddate.my-auto(type=date)
+                        .row
+
+
+
+        //site footer
+        hr.my-4
+        footer.footer
+            p © Software Capstone I | Group Lynx | <a href="https://github.com/wenwend/Employee_Recognition">Source
