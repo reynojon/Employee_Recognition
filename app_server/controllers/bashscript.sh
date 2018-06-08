@@ -9,7 +9,7 @@ node ./app_server/controllers/imageconverter.js $3
 SIGPNG="./app_server/controllers/signature.png"
 if [ -f $SIGPNG ]; then #Convert the png
    echo "Converting signature to jpg"
-   node pngtojpg.js
+   node ./app_server/controllers/pngtojpg.js
 fi
 
 #create latex file from parameters
