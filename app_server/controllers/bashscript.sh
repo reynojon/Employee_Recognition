@@ -17,8 +17,8 @@ fi
 
 #echo "current directory"
 #ls
-#echo "./app_server/controllers"
-#ls ./app_server/controllers
+echo "./app_server/controllers"
+ls ./app_server/controllers
 #echo "root directory"
 #ls ../../
 
@@ -31,6 +31,9 @@ else
    echo "using samplesignature.jpg"
    node ./app_server/controllers/createtex.js "$1" "$2" "./app_server/controllers/samplesignature.jpg" "$4" "$5"
 fi
+
+echo "./app_server/controllers"
+ls ./app_server/controllers
 
 #convert latex file into a pdf
 pdflatex ./app_server/controllers/award.tex
