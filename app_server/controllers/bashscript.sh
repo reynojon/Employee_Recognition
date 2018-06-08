@@ -36,6 +36,6 @@ fi
 pdflatex ./app_server/controllers/award.tex
 
 #send pdf to recipientEmail
-#node ./app_server/controllers/mailer.js "$6"
+node ./app_server/controllers/mailer.js "$6"
 
 echo "award creation script done"
