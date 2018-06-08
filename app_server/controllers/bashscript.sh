@@ -15,12 +15,12 @@ fi
 #create latex file from parameters
 #node ./app_server/controllers/createtex.js "$1" "$2" "./app_server/controllers/signature.png" "$4" "$5"
 
-echo "current directory"
-ls
-echo "./app_server/controllers"
-ls ./app_server/controllers
-echo "root directory"
-ls ../../
+#echo "current directory"
+#ls
+#echo "./app_server/controllers"
+#ls ./app_server/controllers
+#echo "root directory"
+#ls ../../
 
 #create latex file from parameters. If signature.jpg is not present, use default signature file
 SIGJPG="./app_server/controllers/signature.jpg"
